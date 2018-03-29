@@ -7,7 +7,11 @@ import java.util.stream.Collectors;
 /**
  * 题目：输出斐波那契数列。
  *
- * 分析：2种思路 1. 递归 2. 循环
+ * 分析：2种思路
+ *
+ * 1. 递归
+ *
+ * 2. 循环
  */
 public class Fibo {
 
@@ -19,13 +23,13 @@ public class Fibo {
     }
 
     String fiboListStr = String.join(",", fiboList);
-    System.out.println(String.format("Fibo: %s", fiboListStr));
+    System.out.println(String.format("fibo: %s", fiboListStr));
 
     // 测试函数式写法
     String fiboListStrBak = fiboList
         .stream()
         .collect(Collectors.joining(","));
-    System.out.println(String.format("Fibo: %s", fiboListStrBak));
+    System.out.println(String.format("fibo: %s", fiboListStrBak));
   }
 
 
