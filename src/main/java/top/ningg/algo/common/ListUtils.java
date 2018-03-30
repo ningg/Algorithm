@@ -50,7 +50,7 @@ public class ListUtils {
     Node currNode = null;
     Random random = new Random();
     for (int index = 0; index < num; index++) {
-      int value = random.nextInt(100);
+      int value = random.nextInt(10);
       Node newNode = new Node(value);
       if (node == null) {
         node = newNode;
