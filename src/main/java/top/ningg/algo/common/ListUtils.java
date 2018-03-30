@@ -39,6 +39,30 @@ public class ListUtils {
     return node;
   }
 
+  /**
+   * 构造链表
+   *
+   * @param num 链表长度
+   * @return 链表的头结点
+   */
+  public static Node constructNodeList(int num) {
+    Node node = null;
+    Node currNode = null;
+    Random random = new Random();
+    for (int index = 0; index < num; index++) {
+      int value = random.nextInt(100);
+      Node newNode = new Node(value);
+      if (node == null) {
+        node = newNode;
+        currNode = node;
+      } else {
+        currNode.next = newNode;
+        currNode = currNode.next;
+      }
+    }
+    return node;
+  }
+
 
   /**
    * 输出链表
