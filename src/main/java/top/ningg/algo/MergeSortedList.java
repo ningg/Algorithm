@@ -27,86 +27,86 @@ import top.ningg.algo.model.Node;
  */
 public class MergeSortedList {
 
-  public static void main(String[] args) {
-    Node firstSortedList = ListUtils.constructSortedNodeList(5);
-    Node secondSortedList = ListUtils.constructSortedNodeList(3);
+    public static void main(String[] args) {
+        Node firstSortedList = ListUtils.constructSortedNodeList(5);
+        Node secondSortedList = ListUtils.constructSortedNodeList(3);
 
-    // 输出 2 个链表
-    ListUtils.printList(firstSortedList);
-    ListUtils.printList(secondSortedList);
+        // 输出 2 个链表
+        ListUtils.printList(firstSortedList);
+        ListUtils.printList(secondSortedList);
 
 //    Node mergeSortedList = mergeSortedList(firstSortedList, secondSortedList);
-    Node mergeSortedList = mergeSortedListLoop(firstSortedList, secondSortedList);
-    // 输出归并排序的结果
-    ListUtils.printList(mergeSortedList);
-  }
-
-
-  // 方案 A: 迭代方法, 设置好「终止条件」, 同时, 将问题转换为「子问题」
-  public static Node mergeSortedList(Node firstNode, Node secondNode) {
-
-    // 终止条件
-    if (null == firstNode) {
-      return secondNode;
+        Node mergeSortedList = mergeSortedListLoop(firstSortedList, secondSortedList);
+        // 输出归并排序的结果
+        ListUtils.printList(mergeSortedList);
     }
 
-    if (null == secondNode) {
-      return firstNode;
+
+    // 方案 A: 迭代方法, 设置好「终止条件」, 同时, 将问题转换为「子问题」
+    public static Node mergeSortedList(Node firstNode, Node secondNode) {
+
+        // 终止条件
+        if (null == firstNode) {
+            return secondNode;
+        }
+
+        if (null == secondNode) {
+            return firstNode;
+        }
+
+        // 迭代解决
+        if (firstNode.value <= secondNode.value) {
+            firstNode.next = mergeSortedList(firstNode.next, secondNode);
+            return firstNode;
+        } else {
+            secondNode.next = mergeSortedList(firstNode, secondNode.next);
+            return secondNode;
+        }
+
     }
 
-    // 迭代解决
-    if (firstNode.value <= secondNode.value) {
-      firstNode.next = mergeSortedList(firstNode.next, secondNode);
-      return firstNode;
-    } else {
-      secondNode.next = mergeSortedList(firstNode, secondNode.next);
-      return secondNode;
+    public static Node mergeSortedListLoop(Node firstNode, Node secondNode) {
+
+        // 边界判断
+        if (null == firstNode) {
+            return secondNode;
+        }
+        if (null == secondNode) {
+            return firstNode;
+        }
+
+        // 1. 找出头部指针
+        Node headNode = null;
+        if (firstNode.value <= secondNode.value) {
+            headNode = firstNode;
+            firstNode = firstNode.next;
+        } else {
+            headNode = secondNode;
+            secondNode = secondNode.next;
+        }
+
+        // 2. 设置 3 个指针, 逐次移动
+        Node currNode = headNode;
+        while (firstNode != null && secondNode != null) {
+            if (firstNode.value <= secondNode.value) {
+                currNode.next = firstNode;
+                firstNode = firstNode.next;
+            } else {
+                currNode.next = secondNode;
+                secondNode = secondNode.next;
+            }
+
+            // 调整 currNode 指针
+            currNode = currNode.next;
+        }
+
+        // 3. 尾部追加
+        if (null != firstNode) {
+            currNode.next = firstNode;
+        } else {
+            currNode.next = secondNode;
+        }
+
+        return headNode;
     }
-
-  }
-
-  public static Node mergeSortedListLoop(Node firstNode, Node secondNode) {
-
-    // 边界判断
-    if (null == firstNode) {
-      return secondNode;
-    }
-    if (null == secondNode) {
-      return firstNode;
-    }
-
-    // 1. 找出头部指针
-    Node headNode = null;
-    if (firstNode.value <= secondNode.value) {
-      headNode = firstNode;
-      firstNode = firstNode.next;
-    } else {
-      headNode = secondNode;
-      secondNode = secondNode.next;
-    }
-
-    // 2. 设置 3 个指针, 逐次移动
-    Node currNode = headNode;
-    while (firstNode != null && secondNode != null) {
-      if (firstNode.value <= secondNode.value) {
-        currNode.next = firstNode;
-        firstNode = firstNode.next;
-      } else {
-        currNode.next = secondNode;
-        secondNode = secondNode.next;
-      }
-
-      // 调整 currNode 指针
-      currNode = currNode.next;
-    }
-
-    // 3. 尾部追加
-    if (null != firstNode) {
-      currNode.next = firstNode;
-    } else {
-      currNode.next = secondNode;
-    }
-
-    return headNode;
-  }
 }

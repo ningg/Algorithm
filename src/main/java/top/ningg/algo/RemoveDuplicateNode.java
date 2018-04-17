@@ -16,47 +16,47 @@ import top.ningg.algo.model.Node;
  */
 public class RemoveDuplicateNode {
 
-  public static void main(String[] args) {
-    // 1. 构造 List
-    Node originalList = ListUtils.constructNodeList(10);
-    ListUtils.printList(originalList);
+    public static void main(String[] args) {
+        // 1. 构造 List
+        Node originalList = ListUtils.constructNodeList(10);
+        ListUtils.printList(originalList);
 
-    // 2. 去重 List
-    Node result = removeDuplicateNode(originalList);
-    ListUtils.printList(result);
-  }
-
-  /**
-   *
-   */
-  public static Node removeDuplicateNode(Node head) {
-    // 边界检查
-    if (null == head || null == head.next) {
-      return head;
+        // 2. 去重 List
+        Node result = removeDuplicateNode(originalList);
+        ListUtils.printList(result);
     }
 
-    // 1. 集合: 记录所有的取值
-    Set<Integer> valueSet = new HashSet<>();
+    /**
+     *
+     */
+    public static Node removeDuplicateNode(Node head) {
+        // 边界检查
+        if (null == head || null == head.next) {
+            return head;
+        }
 
-    // 2. 去重: 遍历一遍, 进行去重
-    Node preNode = head;
-    Node currNode = head;
+        // 1. 集合: 记录所有的取值
+        Set<Integer> valueSet = new HashSet<>();
 
-    while (null != currNode) {
+        // 2. 去重: 遍历一遍, 进行去重
+        Node preNode = head;
+        Node currNode = head;
 
-      if (valueSet.contains(currNode.value)) {
-        // 重复节点: preNode 指针不变, currNode 下移
-        preNode.next = currNode.next;
-        currNode = currNode.next;
-      } else {
-        // 非重复节点: currNode 赋值给 preNode, currNode 下移
-        valueSet.add(currNode.value);
-        preNode = currNode;
-        currNode = currNode.next;
-      }
+        while (null != currNode) {
+
+            if (valueSet.contains(currNode.value)) {
+                // 重复节点: preNode 指针不变, currNode 下移
+                preNode.next = currNode.next;
+                currNode = currNode.next;
+            } else {
+                // 非重复节点: currNode 赋值给 preNode, currNode 下移
+                valueSet.add(currNode.value);
+                preNode = currNode;
+                currNode = currNode.next;
+            }
+        }
+
+        return head;
     }
-
-    return head;
-  }
 
 }
