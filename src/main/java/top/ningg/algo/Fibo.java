@@ -9,9 +9,12 @@ import java.util.stream.Collectors;
  *
  * 分析：2种思路
  *
- * 1. 递归
+ * 1. 递归: 3 部分分析
+ * a. 核心递归逻辑, f(n) = f(n-1) + f(n-2), 时间复杂度 O(2^n)
+ * b. 终止条件: 终止的判断
+ * c. 边界判断: 输入参数校验
  *
- * 2. 循环
+ * 2. 循环: 时间复杂度 O(n)
  */
 public class Fibo {
 
