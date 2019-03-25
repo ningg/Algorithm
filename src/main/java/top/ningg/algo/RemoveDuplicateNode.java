@@ -39,11 +39,20 @@ public class RemoveDuplicateNode {
         Set<Integer> valueSet = new HashSet<>();
 
         // 2. 去重: 遍历一遍, 进行去重
-        Node preNode = head;
+        Node preNode = null;
         Node currNode = head;
 
         while (null != currNode) {
 
+            // a. 首次处理数据
+            if (null == preNode){
+                valueSet.add(currNode.value);
+                preNode = currNode;
+                currNode = currNode.next;
+                continue;
+            }
+
+            // b. 非首次处理数据
             if (valueSet.contains(currNode.value)) {
                 // 重复节点: preNode 指针不变, currNode 下移
                 preNode.next = currNode.next;

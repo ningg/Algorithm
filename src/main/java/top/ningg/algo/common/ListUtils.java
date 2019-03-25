@@ -81,9 +81,12 @@ public class ListUtils {
         }
         // 输出
         System.out.println();
+        StringBuilder resultStr = new StringBuilder();
         for (Node currNode = head; currNode != null; currNode = currNode.next) {
-            System.out.print(String.format("%d-", currNode.value));
+            resultStr.append(String.format("%d-", currNode.value));
         }
+        String result = resultStr.substring(0, resultStr.length() - 1);
+        System.out.println(result);
     }
 
 }
