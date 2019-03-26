@@ -1,7 +1,7 @@
 # Algorithm
 基础算法
 
-## 主要内容
+## 算法
 
 几个常见场景:
 
@@ -15,3 +15,11 @@
 8. 树:镜像 `MirrorTree`
 9. 数组:二分查找
 10. 数组:查找 top k
+
+更多内容, 参考:
+
+* [computer-science-basic](https://github.com/ningg/computer-science-basic)
+
+## 设计模式
+
+1. 单例模式: `SingletonHungry` 和 `Singleton`
