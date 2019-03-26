@@ -37,8 +37,6 @@ import top.ningg.algo.model.BiNode;
  */
 public class LruCache {
 
-    // 扩容因子
-    private static final float loadFactor = 0.75f;
     // 缓存容量
     private int capacity;
     // 缓存空间
@@ -53,7 +51,7 @@ public class LruCache {
     // 构造方法
     public LruCache(int capacity) {
         this.capacity = capacity;
-        this.cache = new HashMap<String, BiNode>((int) (capacity * loadFactor) + 1, loadFactor);
+        this.cache = new HashMap<String, BiNode>();
         this.head = null;
         this.tail = null;
     }
