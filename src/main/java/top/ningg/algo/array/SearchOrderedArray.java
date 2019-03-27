@@ -61,6 +61,42 @@ public class SearchOrderedArray {
         return hasFound;
     }
 
+    /**
+     * 从「有序」的二维数组, 查找目标值是否存在。
+     *
+     * @param array 有序的二维数组
+     * @param destValue 目标值
+     * @return 目标值, 是否存在二维数组中.
+     */
+    public static boolean searchOrderedArrayAnother(int array[][], int destValue) {
+        // 1. 边界判断
+        if (null == array) {
+            return false;
+        }
+
+        // 获取基本参数
+        int rowNum = array.length;
+        int columnNum = array[0].length;
+
+        // 从左下角遍历:
+        // a. 相等:找到
+        // b. 比目标值大: 行减一
+        // c. 比目标值小: 行加一
+        int currRow = rowNum - 1;
+        int currColumn = 0;
+        while (currRow >= 0 && currColumn < columnNum) {
+            if (array[currRow][currColumn] == destValue) {
+                return true;
+            } else if (array[currRow][currColumn] < destValue) {
+                currColumn++;
+            } else {
+                currRow--;
+            }
+        }
+
+        return false;
+    }
+
 
     public static void main(String[] args) {
         int array[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
@@ -68,5 +104,8 @@ public class SearchOrderedArray {
 
         boolean result = searchOrderedArray(array, destValue);
         System.out.println(result);
+
+        boolean resultOfAnother = searchOrderedArrayAnother(array, destValue);
+        System.out.println(resultOfAnother);
     }
 }

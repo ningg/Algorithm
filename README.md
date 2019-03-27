@@ -24,3 +24,8 @@
 ## 设计模式
 
 1. 单例模式: `SingletonHungry` 和 `Singleton`
+
+
+## 场景描述
+
+1. 青蛙跳阶梯: `FrogJump`
