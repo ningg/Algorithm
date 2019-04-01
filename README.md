@@ -20,7 +20,7 @@
 
 更多内容, 参考:
 
-* [computer-science-basic](https://github.com/ningg/computer-science-basic)
+* [computer-science-basic](https://github.com/ningg/computer-science-basic): 建议, 以此为准, 同时再来参考 `Algorithm` 中的代码
 
 ## 设计模式
 
