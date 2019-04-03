@@ -20,7 +20,7 @@ public class LruCacheWithLinkedHashMap<K, V> {
         boolean accessOrder = true;
 
         //LinkedHashMap(int initialCapacity,float loadFactor,boolean accessOrder)
-        //initialCapacity:初始化容量,loadFactor:加载因子(一般是0.75f),accessOrder:排序方式 false 基于插入顺序 true 基于访问顺序¬
+        //initialCapacity:初始化容量,loadFactor:加载因子(一般是0.75f),accessOrder:排序方式 false 基于插入顺序 true 基于访问顺序
 
         // 初始化缓存
         map = new LinkedHashMap<K, V>(capacity, hashLoadFactor, accessOrder) {
