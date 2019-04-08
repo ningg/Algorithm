@@ -1,4 +1,4 @@
-package top.ningg.algo;
+package top.ningg.algo.list;
 
 import top.ningg.algo.common.ListUtils;
 import top.ningg.algo.model.Node;

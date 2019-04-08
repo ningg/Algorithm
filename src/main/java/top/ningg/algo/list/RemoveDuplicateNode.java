@@ -1,4 +1,4 @@
-package top.ningg.algo;
+package top.ningg.algo.list;
 
 import java.util.HashSet;
 import java.util.Set;
