@@ -1,4 +1,4 @@
-package top.ningg.algo;
+package top.ningg.algo.tree;
 
 import top.ningg.algo.common.TreeNodeUtils;
 import top.ningg.algo.model.TreeNode;
