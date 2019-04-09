@@ -59,11 +59,83 @@ public class RotateOrderedArraySearch {
 
     }
 
+    /**
+     * 从有序的旋转数组中, 找出最小值的下标.
+     *
+     * @param array 有序的旋转数组。
+     * @return 最小值对应的下标
+     */
+    public static int findMinValue(int[] array) {
+        // 1. 边界判断
+        if (null == array) {
+            return -1;
+        }
+
+        return binaryFindMinValue(array, 0, array.length - 1);
+    }
+
+
+    /**
+     * 递归: 把问题, 化解为子问题, 但是, 需要考虑边界条件。
+     *
+     * @param array 有序的旋转数组
+     * @param start 起始下标
+     * @param end 结束下标
+     * @return 最小取值的下标
+     */
+    public static int binaryFindMinValue(int[] array, int start, int end) {
+        // 1. 边界判断
+        if (null == array) {
+            return -1;
+        }
+        if (start > end) {
+            return -1;
+        }
+
+        // 2. 终止条件
+        if (start == end) {
+            return start;
+        }
+        // 原始的升序数组
+        if (array[start] < array[end]) {
+            return start;
+        }
+
+        // 2. 迭代
+        int middle = (start + end) / 2;
+        if (array[start] <= array[middle]) {
+            // 特列: 取值完全相同
+            if (array[start] == array[middle] && array[end] == array[middle]) {
+                return getMinIndex(array, start, end);
+            }
+
+            // 左边升序, 最小值在右侧
+            return binaryFindMinValue(array, middle + 1, end);
+        } else {
+            // 右侧升序, 最小值在左侧
+            return binaryFindMinValue(array, start, middle);
+        }
+
+    }
+
+    public static int getMinIndex(int[] array, int start, int end) {
+        int minValue = array[start];
+        int minIndex = start;
+        for (int i = start; i <= end; i++) {
+            if (array[i] < minValue) {
+                minValue = array[i];
+                minIndex = i;
+            }
+        }
+        return minIndex;
+    }
+
     public static void main(String[] args) {
-        int[] array = {5,6,7,8,9,1,2,2,2};
+        int[] array = {1, 2, 3, 4, 5, 6};
         int destValue = 7;
 
         System.out.println(findValue(array, destValue));
+        System.out.println(findMinValue(array));
     }
 
 }
