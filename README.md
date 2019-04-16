@@ -18,6 +18,7 @@
 11. 数据: 二维有序数组, 查询目标数值 `SearchOrderedArray`
 12. 树: 遍历(前序、中序、后续), 深度遍历、广度遍历、层次遍历
 13. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection`
+14. Map：已知一个 Map，将其转换为 flatten Map `FlattenMap`
 
 更多内容, 参考:
 
