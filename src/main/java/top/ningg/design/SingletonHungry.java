@@ -1,7 +1,7 @@
 package top.ningg.design;
 
 /**
- * 单例模式: 饿汉模式(提前创建实例)
+ * 单例模式: 饿汉模式(立即创建实例)
  */
 public class SingletonHungry {
 
