@@ -1,4 +1,4 @@
-package top.ningg.algo;
+package top.ningg.algo.array;
 
 import java.util.LinkedList;
 import java.util.List;

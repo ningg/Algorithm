@@ -8,7 +8,7 @@ import top.ningg.algo.model.Node;
  *
  * 分析: 基本思路, 设置 2 个指针, 遍历链表(相距 k 个节点)
  */
-public class GetLastButKthNode {
+public class GetLastKthNode {
 
     /**
      * 找出链表中, 倒数第 k 个节点

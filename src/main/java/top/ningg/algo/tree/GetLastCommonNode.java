@@ -3,7 +3,7 @@ package top.ningg.algo.tree;
 import top.ningg.algo.model.TreeNode;
 
 /**
- * 场景: 求二叉树中两个节点的最低公共祖先节点
+ * 场景: 求二叉树中, 两个节点的最低公共祖先节点
  *
  * 递归解法：
  *

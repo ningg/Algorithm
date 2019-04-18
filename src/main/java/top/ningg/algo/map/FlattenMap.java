@@ -1,4 +1,4 @@
-package top.ningg.algo.string;
+package top.ningg.algo.map;
 
 import com.alibaba.fastjson.JSON;
 import java.util.HashMap;
