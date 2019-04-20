@@ -57,7 +57,7 @@ public class LruCache {
     }
 
     // set 方法
-    public void set(String key, Object value) {
+    public synchronized void set(String key, Object value) {
         // 基本步骤:
         // 1. 判断 key 是否存在
         //  a. 若存在, 则, 获取-更新-截取-插入头部
@@ -102,11 +102,14 @@ public class LruCache {
         if (null == head && null == tail) {
             this.head = node;
             this.tail = node;
+
+            return;
         }
 
         BiNode currHead = this.head;
-        node.next = currHead;
+
         currHead.pre = node;
+        node.next = currHead;
 
         this.head = node;
     }
@@ -123,19 +126,23 @@ public class LruCache {
         //   a. 如果是头部元素, 则, 需要调整「头部指针」
         if (this.head == node) {
             this.head = node.next;
+            node.next = null;
+
             if (null != this.head) {
                 this.head.pre = null;
             }
-            node.next = null;
+            return node;
         }
 
         //   b. 如果是尾部元素, 则, 需要调整「尾部指针」
         if (this.tail == node) {
             this.tail = node.pre;
+            node.pre = null;
+
             if (null != this.tail) {
                 this.tail.next = null;
             }
-            node.pre = null;
+            return node;
         }
 
         // 2. 中间元素: 前后元素直接连接即可
@@ -161,21 +168,24 @@ public class LruCache {
         // 2. 若达到, 则, 删除最后一个 Node
         // 3. 若未达到, 则, 不做任何处理
 
-        if (getCurrentSize() >= capacity) {
+        if (cache.size() >= capacity) {
             // 删除最后一个 Node
             if (null != this.tail) {
-                cache.remove(this.tail.key);
+                BiNode currNode = this.tail;
 
-                this.tail = this.tail.pre;
-                this.tail.next = null;
+                cache.remove(currNode.key);
+
+                BiNode preNode = currNode.pre;
+                this.tail = preNode;
+
+                if (null != preNode) {
+                    preNode.next = null;
+                    currNode.pre = null;
+                }
             }
         }
     }
 
-    // 查询当前缓存大小
-    private int getCurrentSize() {
-        return cache.size();
-    }
 
     // 输出对象
     public void print() {
