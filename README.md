@@ -11,21 +11,21 @@
 1. 斐波那契数列: `Fibo`
 2. 斐波那契数列: 数字判断 `FiboContainValue`
 3. 数据: 二维有序数组, 查询目标数值 `SearchOrderedArray`
-4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection`
+4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
 
 链表:
 
 1. 链表: 获取倒数第 k 个节点, `GetLastKthNode`
-2. 链表: 有序链表归并 `MergeSortedList`
+2. 链表: 有序链表归并 `MergeSortedList` **+**
 3. 链表: 删除重复节点 `RemoveDuplicateNode`
 4. 链表: 不知道头结点, 删除一个节点 `RemoveNode`
-5. 链表: 翻转 `ReverseList`
-6. 链表: 排序 `SortList`
+5. 链表: 翻转 `ReverseList` **+**
+6. 链表: 排序 `SortList` **+**
 
 搜索:
 
-1. 数组: 有序数组, 二分查找, `BinarySearch`
-2. 树: 二叉查找树, 搜索指定数, `BinarySearchTree`
+1. 数组: 有序数组, 二分查找, `BinarySearch` **+**
+2. 树: 二叉查找树, 搜索指定数, `BinarySearchTree` **+**
 3. 数组: 循环的有序数组, 查找指定值 `RotateOrderedArraySearch`
 
 树:
@@ -44,9 +44,9 @@
 排序:
 
 1. 数组排序: 冒泡排序, 两两比较, 大的向后交换 `BubbleSort`
-2. 数组排序: 归并排序, 二分为子数组, 分别排序后, 借助空间, 进行归并 `MergeSort`
-3. 数组排序: 快速排序, 选取基准点, 进行就地排序 `QuickSort`
-4. 数组排序: 选择排序, 从前向后遍历, 每次选择出一个最小值 `SelectionSort`
+2. 数组排序: 归并排序, 二分为子数组, 分别排序后, 借助空间, 进行归并 `MergeSort` **+**
+3. 数组排序: 快速排序, 选取基准点, 进行就地排序 `QuickSort` **+**
+4. 数组排序: 选择排序, 从前向后遍历, 每次选择出一个最小值 `SelectionSort` **+**
 
 
 线程:
@@ -85,3 +85,4 @@ Map:
 ## 场景描述
 
 1. 青蛙跳阶梯: `FrogJump`
+2. LRU Cache: `LruCacheWithLinkedHashMap` 和 `LruCache`

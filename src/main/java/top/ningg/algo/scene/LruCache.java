@@ -1,4 +1,4 @@
-package top.ningg.algo;
+package top.ningg.algo.scene;
 
 import java.util.HashMap;
 import java.util.LinkedList;

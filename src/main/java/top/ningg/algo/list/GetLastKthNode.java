@@ -6,7 +6,9 @@ import top.ningg.algo.model.Node;
 /**
  * 题目: 获取链表中, 倒数第 k 个节点
  *
- * 分析: 基本思路, 设置 2 个指针, 遍历链表(相距 k 个节点)
+ * 分析: 基本思路, 设置 2 个指针, 遍历链表(相距 k-1 个节点)
+ *
+ * 参考: http://wiki.jikexueyuan.com/project/for-offer/question-fifteen.html
  */
 public class GetLastKthNode {
 
@@ -24,10 +26,10 @@ public class GetLastKthNode {
         }
 
         // 2. 寻找 k-th 节点
-        // a. 两个指针, 一个先走(相聚 k 个节点)
+        // a. 两个指针, 一个先走(相聚 k-1 个节点)
         Node former = head;
         Node latter = head;
-        for (int i = 1; i <= k; i++) {
+        for (int i = 1; i < k; i++) {
             if (null != former) {
                 former = former.next;
             } else {
@@ -36,7 +38,7 @@ public class GetLastKthNode {
         }
 
         // b. 先走的节点, 走到 null, 则, 说明后走的节点,
-        while (null != former) {
+        while (null != former.next) {
             former = former.next;
             latter = latter.next;
         }
