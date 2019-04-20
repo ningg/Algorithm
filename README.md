@@ -13,7 +13,7 @@
 3. 数据: 二维有序数组, 查询目标数值 `SearchOrderedArray`
 4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
 5. 数组: TopK 问题, 最大的 k 个数 `TopKth` **+**
-6. 数组: 子数组和的最大值
+6. 数组: 子数组和的最大值, `SubArrayMaxSum` **+**
 
 链表:
 
