@@ -12,6 +12,8 @@
 2. 斐波那契数列: 数字判断 `FiboContainValue`
 3. 数据: 二维有序数组, 查询目标数值 `SearchOrderedArray`
 4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
+5. 数组: TopK 问题, 最大的 k 个数 `TopKth` **+**
+6. 数组: 子数组和的最大值
 
 链表:
 
@@ -40,6 +42,7 @@
 8. 树: 两棵二叉树, 是否结构相同 `StructureCmp`
 9. 树: 给定 2 棵树 A 和 B, 判断 B 是否为 A 的子结构 `SubStructure`
 10. 树: 树的遍历, 前序、中序、后续 `TraverseTree`
+11. 树: 节点的最大距离 `MaxDistance` , 其借助了公共变量
 
 排序:
 
