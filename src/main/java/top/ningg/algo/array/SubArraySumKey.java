@@ -30,10 +30,10 @@ public class SubArraySumKey {
         for (int index = 0; index < array.length; index++) {
             prefixSum += array[index];
             // b. 判断目标取值是否存在, 若存在, 则,更新 maxLen
-            int delta = destKey - prefixSum;
+            int delta = prefixSum - destKey;
             if (prefixSumArray.containsKey(delta)) {
                 int deltaIndex = prefixSumArray.get(delta);
-                maxLen = Math.max(Math.abs(index - deltaIndex), maxLen);
+                maxLen = Math.max(index - deltaIndex, maxLen);
             }
 
             // c. 判断当前「前缀和」, 是否存在, 若不存在, 则, 添加到 HashMap 中
