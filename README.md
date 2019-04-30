@@ -14,6 +14,7 @@
 4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
 5. 数组: TopK 问题, 最大的 k 个数 `TopKth` **+**
 6. 数组: 子数组和的最大值, `SubArrayMaxSum` **+**
+7. 数组: 连续子数组的和,为固定值 `SubArraySumKey` **+**
 
 链表:
 
