@@ -24,6 +24,7 @@
 4. 链表: 不知道头结点, 删除一个节点 `RemoveNode`
 5. 链表: 翻转 `ReverseList` **+**
 6. 链表: 排序 `SortList` **+**
+7. 链表: 指定区间，翻转链表 `ReverseSegmentList` **+**
 
 搜索:
 
