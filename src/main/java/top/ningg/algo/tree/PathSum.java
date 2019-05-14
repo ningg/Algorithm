@@ -56,8 +56,8 @@ public class PathSum {
         }
 
         // 迭代
-        FindPath(root.left, target);
-        FindPath(root.right, target);
+        FindPath(root.left, delta);
+        FindPath(root.right, delta);
 
         // 移除当前节点
         list.remove(list.size() - 1);

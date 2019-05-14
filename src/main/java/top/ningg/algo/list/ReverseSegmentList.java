@@ -32,7 +32,7 @@ public class ReverseSegmentList {
         bufNode.next = head;
 
         Node pre = bufNode;
-        // 特别说明：pre 停留在 m 编号之前
+        // 特别说明：pre 停留在 m 编号之前, (m - 1) 次
         for (int index = 1; index < m; index++) {
             pre = pre.next;
         }
@@ -40,7 +40,7 @@ public class ReverseSegmentList {
         // b. 插入法，逐次遍历节点，并插入
         Node start = pre.next;
         Node curr = start.next;
-        // 特别说明：插入 n-m 次
+        // 特别说明：插入 ((m-n) -1) 次
         for (int index = m; index < n; index++) {
             start.next = curr.next;
             curr.next = pre.next;
