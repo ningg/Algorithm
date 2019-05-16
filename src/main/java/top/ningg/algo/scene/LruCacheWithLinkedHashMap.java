@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class LruCacheWithLinkedHashMap<K, V> {
 
-    public static final float hashLoadFactor = 0.75f;
+    private static final float hashLoadFactor = 0.75f;
 
     private LinkedHashMap<K, V> map;
 
