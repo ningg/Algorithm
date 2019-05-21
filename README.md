@@ -14,7 +14,7 @@
 
 数组：
 
-1. 斐波那契数列：`Fibo` [link](/blob/master/src/main/top/ningg/algo/array/Fibo.java)
+1. 斐波那契数列：`Fibo` [link](src/main/java/top/ningg/algo/array/Fibo.java)
 2. 斐波那契数列：数字判断 `FiboContainValue`
 3. 数据：二维有序数组, 查询目标数值 `SearchOrderedArray`
 4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
