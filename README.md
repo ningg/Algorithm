@@ -50,7 +50,7 @@
 7. 树：二叉树「镜像」 `MirrorTree`
 8. 树：两棵二叉树, 是否结构相同 `StructureCmp`
 9. 树：给定 2 棵树 A 和 B, 判断 B 是否为 A 的子结构 `SubStructure`
-10. 树：树的遍历, 前序、中序、后续 `TraverseTree` [link](/blob/master/src/main/top/ningg/algo/tree/TraverseTree.java)
+10. 树：树的遍历, 前序、中序、后续 `TraverseTree` [link](src/main/top/ningg/algo/tree/TraverseTree.java)
 11. 树：节点的最大距离 `MaxDistance` , 其借助了公共变量
 12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree`
 13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum`
