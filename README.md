@@ -22,6 +22,7 @@
 6. 数组：子数组和的最大值, `SubArrayMaxSum` **+**
 7. 数组：连续子数组的和,为固定值 `SubArraySumKey` **+**
 8. 数组：硬币兑换，兑换的硬币数量最小 `CoinChange` **+**
+9. 数组：最长递减子序列，序列长度 `SubArrayDescMaxLen` [link](src/main/java/top/ningg/algo/array/SubArrayDescMaxLen.java)
 
 链表：
 
