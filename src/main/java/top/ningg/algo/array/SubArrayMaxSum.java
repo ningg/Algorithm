@@ -13,6 +13,7 @@ package top.ningg.algo.array;
  *
  * - https://blog.csdn.net/u013132035/article/details/80697338
  * - https://bylijinnan.iteye.com/blog/1343170
+ *
  */
 public class SubArrayMaxSum {
 

@@ -16,6 +16,7 @@ import java.util.Arrays;
  *
  * 1.max[i + 1] = Max{max[i+1], maxSuffix[i + 1] }，分为 2 个维度（包含 i + 1 位，不包含 i + 1 位）
  * 2.maxSuffix[i + 1] = Max{ max[k] } + 1，其中 k 属于[0, i]，且 max[k] >= array[i + 1]
+ *
  */
 public class SubArrayDescMaxLen {
 

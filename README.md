@@ -5,7 +5,7 @@
 几个常识：
 
 > 1. **纸上走读**：代码纸上走读，会发现其`潜在边界` or `核心逻辑`，而且通过反复查看，印象深刻，因为，知识本来就是不平的，有感情、有起伏
-
+> 
 > 2. **温故知新**：查看内容，图形化思考，构建知识体系
 
 ## 算法
@@ -15,13 +15,13 @@
 数组：
 
 1. 斐波那契数列：`Fibo` [link](src/main/java/top/ningg/algo/array/Fibo.java)
-2. 斐波那契数列：数字判断 `FiboContainValue`
-3. 数据：二维有序数组, 查询目标数值 `SearchOrderedArray`
-4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+**
-5. 数组：TopK 问题, 最大的 k 个数 `TopKth` **+**
-6. 数组：子数组和的最大值, `SubArrayMaxSum` **+**
-7. 数组：连续子数组的和,为固定值 `SubArraySumKey` **+**
-8. 数组：硬币兑换，兑换的硬币数量最小 `CoinChange` **+**
+2. 斐波那契数列：数字判断 `FiboContainValue` [link](src/main/java/top/ningg/algo/array/FiboContainValue.java)
+3. 数据：二维有序数组, 查询目标数值 `SearchOrderedArray` [link](src/main/java/top/ningg/algo/array/SearchOrderedArray.java)
+4. 数组：2 个有序数组的交集 `TwoSortedArrayIntersection` **+** [link](src/main/java/top/ningg/algo/array/TwoSortedArrayIntersection.java) 
+5. 数组：TopK 问题, 最大的 k 个数 `TopKth` **+** [link](src/main/java/top/ningg/algo/array/TopKth.java)
+6. 数组：子数组和的最大值, `SubArrayMaxSum` **+** [link](src/main/java/top/ningg/algo/array/SubArrayMaxSum.java)
+7. 数组：连续子数组的和,为固定值 `SubArraySumKey` **+** [link](src/main/java/top/ningg/algo/array/SubArraySumKey.java)
+8. 数组：硬币兑换，兑换的硬币数量最小 `CoinChange` **+** [link](src/main/java/top/ningg/algo/array/CoinChange.java)
 9. 数组：最长递减子序列，序列长度 `SubArrayDescMaxLen` [link](src/main/java/top/ningg/algo/array/SubArrayDescMaxLen.java)
 
 链表：
