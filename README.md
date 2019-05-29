@@ -26,8 +26,8 @@
 
 链表：
 
-1. 链表：获取倒数第 k 个节点, `GetLastKthNode`
-2. 链表：有序链表归并 `MergeSortedList` **+**
+1. 链表：获取倒数第 k 个节点, `GetLastKthNode` [link](src/main/java/top/ningg/algo/list/GetLastKthNode.java)
+2. 链表：有序链表归并 `MergeSortedList` **+** [link](src/main/java/top/ningg/algo/list/MergeSortedList.java)
 3. 链表：删除重复节点 `RemoveDuplicateNode`
 4. 链表：不知道头结点, 删除一个节点 `RemoveNode`
 5. 链表：翻转 `ReverseList` **+**

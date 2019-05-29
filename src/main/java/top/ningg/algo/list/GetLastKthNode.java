@@ -9,6 +9,7 @@ import top.ningg.algo.model.Node;
  * 分析: 基本思路, 设置 2 个指针, 遍历链表(相距 k-1 个节点)
  *
  * 参考: http://wiki.jikexueyuan.com/project/for-offer/question-fifteen.html
+ *
  */
 public class GetLastKthNode {
 
