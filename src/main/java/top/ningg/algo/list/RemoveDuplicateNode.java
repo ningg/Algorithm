@@ -13,6 +13,7 @@ import top.ningg.algo.model.Node;
  * 1. 借助 Set
  *
  * 2. 遍历一遍，如果节点存在，则，跳过当前节点(需要保留上一个节点地址)
+ *
  */
 public class RemoveDuplicateNode {
 

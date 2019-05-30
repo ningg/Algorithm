@@ -8,11 +8,16 @@
 > 
 > 2. **温故知新**：查看内容，图形化思考，构建知识体系
 
+**特别说明**：
+
+* 不要局限于下述顺序，要自由穿插，从前浏览、从后浏览、从中间浏览
+* 先有逻辑，后有代码。
+
 ## 算法
 
 几个常见场景：
 
-数组：
+**数组**：
 
 1. 斐波那契数列：`Fibo` [link](src/main/java/top/ningg/algo/array/Fibo.java)
 2. 斐波那契数列：数字判断 `FiboContainValue` [link](src/main/java/top/ningg/algo/array/FiboContainValue.java)
@@ -24,23 +29,23 @@
 8. 数组：硬币兑换，兑换的硬币数量最小 `CoinChange` **+** [link](src/main/java/top/ningg/algo/array/CoinChange.java)
 9. 数组：最长递减子序列，序列长度 `SubArrayDescMaxLen` [link](src/main/java/top/ningg/algo/array/SubArrayDescMaxLen.java)
 
-链表：
+**链表**：
 
 1. 链表：获取倒数第 k 个节点, `GetLastKthNode` [link](src/main/java/top/ningg/algo/list/GetLastKthNode.java)
 2. 链表：有序链表归并 `MergeSortedList` **+** [link](src/main/java/top/ningg/algo/list/MergeSortedList.java)
-3. 链表：删除重复节点 `RemoveDuplicateNode`
-4. 链表：不知道头结点, 删除一个节点 `RemoveNode`
-5. 链表：翻转 `ReverseList` **+**
-6. 链表：排序 `SortList` **+**
-7. 链表：指定区间，翻转链表 `ReverseSegmentList` **+**
+3. 链表：删除重复节点 `RemoveDuplicateNode` [link](src/main/java/top/ningg/algo/list/RemoveDuplicateNode.java)
+4. 链表：不知道头结点, 删除一个节点 `RemoveNode` [link](src/main/java/top/ningg/algo/list/RemoveNode.java)
+5. 链表：翻转 `ReverseList` **+** [link](src/main/java/top/ningg/algo/list/ReverseList.java)
+6. 链表：排序 `SortList` **+** [link](src/main/java/top/ningg/algo/list/SortList.java)
+7. 链表：指定区间，翻转链表 `ReverseSegmentList` **+** [link](src/main/java/top/ningg/algo/list/ReverseSegmentList.java)
 
-搜索：
+**搜索**：
 
 1. 数组：有序数组, 二分查找, `BinarySearch` **+**
 2. 树：二叉查找树, 搜索指定数, `BinarySearchTree` **+**
 3. 数组：循环的有序数组, 查找指定值 `RotateOrderedArraySearch`
 
-树：
+**树**：
 
 1. 树：统计「叶子节点」数 `CountLeafNode`
 2. 树：统计「节点」数 `CountTreeNode`
@@ -56,7 +61,7 @@
 12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree`
 13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum`
 
-排序：
+**排序**：
 
 1. 数组排序：冒泡排序, 两两比较, 大的向后交换 `BubbleSort`
 2. 数组排序：归并排序, 二分为子数组, 分别排序后, 借助空间, 进行归并 `MergeSort` **+**
@@ -64,22 +69,22 @@
 4. 数组排序：选择排序, 从前向后遍历, 每次选择出一个最小值 `SelectionSort` **+**
 
 
-线程：
+**线程**：
 
 1. 线程：三个线程之间协作, 依赖共同的锁和信号(同一个静态变量) `ThreeThread`
 
 
-字符串：
+**字符串**：
 
 1. TODO
 
 
-Map：
+**Map**：
 
 1. Map：已知一个 Map，将其转换为 flatten Map `FlattenMap`
 
 
-二进制, 位(Bit)：
+**二进制**, 位(Bit)：
 
 1. 二进制, 位：元素, 全排列, 要求所有元素都得出现, 有顺序要求 `AllRange`
 2. 二进制, 位：元素, 全组合, 不要求所有元素都出现, 没有顺序要求 `Combination`

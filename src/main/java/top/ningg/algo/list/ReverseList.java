@@ -11,6 +11,7 @@ import top.ningg.algo.model.Node;
  * 1. 遍历一遍, 直接「插入法」，在「链表头部」，不断插入节点
  *
  * TODO：增加一个示意图，拆解插入步骤
+ *
  */
 public class ReverseList {
 

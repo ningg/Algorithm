@@ -14,6 +14,7 @@ import top.ningg.algo.model.Node;
  * 动作:
  *
  * 1. 删除: 将下一个节点内容, 赋值给当前节点(取值和 next 节点引用)
+ *
  */
 public class RemoveNode {
 

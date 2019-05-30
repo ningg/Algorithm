@@ -6,6 +6,7 @@ import top.ningg.algo.model.Node;
 
 /**
  * 题目：翻转链表的指定区间。
+ *
  */
 public class ReverseSegmentList {
 

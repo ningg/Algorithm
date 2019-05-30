@@ -13,6 +13,7 @@ import top.ningg.algo.model.Node;
  * 2. 方案B：归并排序，时间复杂度 O(nlg(n))
  *
  * 更多细节，参考：http://blog.csdn.net/kerryfish/article/details/24043099
+ *
  */
 public class SortList {
 
