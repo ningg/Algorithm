@@ -10,6 +10,7 @@ import top.ningg.algo.model.TreeNode;
  * 1. 边界判断: 如果二叉树为空，返回0
  * 1. 终止条件: 如果二叉树不为空且左右子树为空，返回1
  * 1. 迭代执行: 如果二叉树不为空，且左右子树不同时为空，返回左子树中叶子节点个数加上右子树中叶子节点个数
+ *
  */
 public class CountLeafNode {
 

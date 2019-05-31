@@ -9,6 +9,7 @@ import top.ningg.algo.model.TreeNode;
  *
  * 1. 如果两个节点分别在根节点的左子树和右子树，则返回根节点
  * 1. 如果两个节点都在左子树，则递归处理左子树；如果两个节点都在右子树，则递归处理右子树
+ *
  */
 public class GetLastCommonNode {
 

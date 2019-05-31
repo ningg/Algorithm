@@ -11,6 +11,7 @@ import top.ningg.algo.model.TreeNode;
  * 1. 如果二叉树不为空，二叉树的深度 = max(左子树深度， 右子树深度) + 1
  *
  * 参考: https://www.cnblogs.com/xudong-bupt/p/4036190.html 其中还有「树的宽度」
+ *
  */
 public class GetDepth {
 

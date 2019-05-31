@@ -22,6 +22,7 @@ import top.ningg.algo.model.TreeNode;
  *
  * - https://caoxyemail.iteye.com/blog/2129866
  * - https://blog.csdn.net/liuyi1207164339/article/details/50898902
+ *
  */
 public class MaxDistance {
 

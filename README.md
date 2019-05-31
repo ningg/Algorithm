@@ -47,19 +47,24 @@
 
 **树**：
 
-1. 树：统计「叶子节点」数 `CountLeafNode`
-2. 树：统计「节点」数 `CountTreeNode`
-3. 树：统计「第 k 层」节点个数 `CountTreeNodeKthLevel`
-4. 树：统计「树的深度」 `GetDepth`
-5. 树：获取「二叉树」中, 2 个给定节点的「最低公共子节点」 `GetLastCommonNode`
-6. 树：层次遍历, `LevelTraverse`
-7. 树：二叉树「镜像」 `MirrorTree`
-8. 树：两棵二叉树, 是否结构相同 `StructureCmp`
-9. 树：给定 2 棵树 A 和 B, 判断 B 是否为 A 的子结构 `SubStructure`
+1. 树：统计「叶子节点」数 `CountLeafNode` [link](src/main/java/top/ningg/algo/tree/CountLeafNode.java)
+2. 树：统计「节点」数 `CountTreeNode` [link](src/main/java/top/ningg/algo/tree/CountTreeNode.java)
+3. 树：统计「第 k 层」节点个数 `CountTreeNodeKthLevel` [link](src/main/java/top/ningg/algo/tree/CountTreeNodeKthLevel.java)
+4. 树：统计「树的深度」 `GetDepth` [link](src/main/java/top/ningg/algo/tree/GetDepth.java)
+5. 树：获取「二叉树」中, 2 个给定节点的「最低公共子节点」 `GetLastCommonNode` [link](src/main/java/top/ningg/algo/tree/GetLastCommonNode.java)
+6. 树：层次遍历, `LevelTraverse` [link](src/main/java/top/ningg/algo/tree/LevelTraverse.java)
+6. 树：统计「树的宽度」 `GetWidth` [link](src/main/java/top/ningg/algo/tree/GetWidth.java)
+7. 树：二叉树「镜像」 `MirrorTree` [link](src/main/java/top/ningg/algo/tree/MirrorTree.java)
+8. 树：两棵二叉树, 是否结构相同 `StructureCmp` [link](src/main/java/top/ningg/algo/tree/StructureCmp.java)
+9. 树：给定 2 棵树 A 和 B, 判断 B 是否为 A 的子结构 `SubStructure` [link](src/main/java/top/ningg/algo/tree/SubStructure.java)
 10. 树：树的遍历, 前序、中序、后续 `TraverseTree` [link](src/main/java/top/ningg/algo/tree/TraverseTree.java)
-11. 树：节点的最大距离 `MaxDistance` , 其借助了公共变量
-12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree`
-13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum`
+11. 树：节点的最大距离 `MaxDistance` , 其借助了公共变量 [link](src/main/java/top/ningg/algo/tree/MaxDistance.java)
+12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree` [link](src/main/java/top/ningg/algo/tree/RecoverTree.java)
+13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum` [link](src/main/java/top/ningg/algo/tree/PathSum.java)
+
+需要留意的代码：
+
+* 树：计算宽度 `GetWidth`
 
 **排序**：
 

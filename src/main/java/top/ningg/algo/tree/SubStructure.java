@@ -11,6 +11,7 @@ import top.ningg.algo.model.TreeNode;
  * 2. 边界判断: 二叉树 A 为 null, 则, false
  * 3. 终止条件: 二叉树 A 和 二叉树 B, 当前节点 value 相等, 则, 以当前版本为基点, 判断二叉树 B 是否属于二叉树 A
  * 4. 迭代执行: 二叉树 B 是否属于二叉树 A 左子树的子结构 or 二叉树 A 的右子树
+ *
  */
 public class SubStructure {
 

@@ -9,6 +9,7 @@ import top.ningg.algo.model.TreeNode;
  *
  * 1. 如果二叉树为空，节点个数为0
  * 1. 如果二叉树不为空，二叉树节点个数 = 左子树节点个数 + 右子树节点个数 + 1
+ *
  */
 public class CountTreeNode {
 

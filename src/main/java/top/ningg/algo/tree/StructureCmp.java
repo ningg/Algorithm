@@ -12,6 +12,7 @@ import top.ningg.algo.model.TreeNode;
  * 3. 如果两棵二叉树都不为空：
  * a. 判断节点取值是否相同，若不相同，则返回假
  * b. 若节点取值相同，则判断对应的「左子树」和「右子树」都同构返回真，其他返回假
+ *
  */
 public class StructureCmp {
 

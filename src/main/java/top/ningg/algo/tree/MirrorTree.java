@@ -5,6 +5,7 @@ import top.ningg.algo.model.TreeNode;
 
 /**
  * 题目: 二叉树节点, 进行镜像.
+ *
  */
 public class MirrorTree {
 
@@ -20,7 +21,7 @@ public class MirrorTree {
             return null;
         }
 
-        // 2. 递归处理
+        // 2. 递归处理：下述逻辑，涵盖了「叶子节点」的剪枝逻辑
         TreeNode currLeftTree = root.left;
         TreeNode currRightTree = root.right;
         root.left = mirror(currRightTree);
