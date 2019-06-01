@@ -61,6 +61,7 @@
 11. 树：节点的最大距离 `MaxDistance` , 其借助了公共变量 [link](src/main/java/top/ningg/algo/tree/MaxDistance.java)
 12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree` [link](src/main/java/top/ningg/algo/tree/RecoverTree.java)
 13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum` [link](src/main/java/top/ningg/algo/tree/PathSum.java)
+14. 树：二叉搜索树，转换为「双向链表」 `TreeToList` [link](src/main/java/top/ningg/algo/tree/TreeToList.java)
 
 需要留意的代码：
 
