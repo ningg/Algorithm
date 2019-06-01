@@ -62,6 +62,7 @@
 12. 树：二叉搜索树，其 2 个节点位置被互换，修正这颗二叉查找树，`RecoverTree` [link](src/main/java/top/ningg/algo/tree/RecoverTree.java)
 13. 树：到叶子节点的路径和为指定值，并且，输出路径，`PathSum` [link](src/main/java/top/ningg/algo/tree/PathSum.java)
 14. 树：二叉搜索树，转换为「双向链表」 `TreeToList` [link](src/main/java/top/ningg/algo/tree/TreeToList.java)
+15. 树：二叉树，输出每一次「最右的元素」 `RightMost` [link](src/main/java/top/ningg/algo/tree/RightMost.java)
 
 需要留意的代码：
 
@@ -97,6 +98,11 @@
 3. 二进制, 位：十进制整数, 统计其「二进制表示」中 1 的数量 `CountOneBit`
 4. 二进制, 位：计算整数 base 的整数次幂 exponent `ExponentCalculate`
 
+
+**数字**：
+
+1. 数：求一个数的开根号 `Sqrt(x)` [link](src/main/java/top/ningg/algo/num/SqrtX.java)
+2. 数：求一个数的开根号，保留指定精度 `Sqrt(a,b)` [link](src/main/java/top/ningg/algo/num/SqrtAB.java)
 
 
 更多内容, 参考：

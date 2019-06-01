@@ -20,7 +20,7 @@ public class TreeNodeUtils {
         }
 
         // 构造节点
-        int randomValue = (int) (Math.random() * 100);
+        int randomValue = (int) (Math.random() * 10);
         TreeNode currNode = new TreeNode(randomValue);
 
         currNode.left = constructBinaryTree(depthLevel - 1);
