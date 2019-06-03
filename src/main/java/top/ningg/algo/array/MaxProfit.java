@@ -25,7 +25,7 @@ public class MaxProfit {
         }
 
         int len = array.length;
-        if (0 == len) {
+        if (0 == len || 1 == len) {
             return 0;
         }
 
