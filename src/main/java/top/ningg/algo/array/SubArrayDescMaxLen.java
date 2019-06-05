@@ -28,19 +28,23 @@ public class SubArrayDescMaxLen {
 
         // 定义：max[i]
         int len = array.length;
+
         int[] max = new int[len];
+        int maxValue = 1;
         Arrays.fill(max, 1);
 
         for (int i = 0; i < len; i++) {
             // 状态转移函数：回溯
             for (int j = 0; j < i; j++) {
                 if (array[i] <= array[j]) {
+                    // 包含当前节点的「最长长度」，前驱节点的关系，就是比较
                     max[i] = Math.max(max[i], max[j] + 1);
+                    maxValue = Math.max(maxValue, max[i]);
                 }
             }
         }
 
-        return max[len - 1];
+        return maxValue;
     }
 
     public static void main(String[] args) {
