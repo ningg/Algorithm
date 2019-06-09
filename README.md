@@ -29,6 +29,7 @@
 8. 数组：硬币兑换，兑换的硬币数量最小 `CoinChange` **+** [link](src/main/java/top/ningg/algo/array/CoinChange.java)
 9. 数组：最长递减子序列，序列长度 `SubArrayDescMaxLen` [link](src/main/java/top/ningg/algo/array/SubArrayDescMaxLen.java)
 10. 数组：生成窗口最大值数组， `MaxWindow` [link](src/main/java/top/ningg/algo/array/MaxWindow.java)
+11. 数组：股票最大利润，`MaxProfit` [link](src/main/java/top/ningg/algo/array/MaxProfit.java)
 
 **链表**：
 
