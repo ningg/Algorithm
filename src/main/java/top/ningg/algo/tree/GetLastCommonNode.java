@@ -9,7 +9,6 @@ import top.ningg.algo.model.TreeNode;
  *
  * 1. 如果两个节点分别在根节点的左子树和右子树，则返回根节点
  * 1. 如果两个节点都在左子树，则递归处理左子树；如果两个节点都在右子树，则递归处理右子树
- *
  */
 public class GetLastCommonNode {
 
@@ -67,5 +66,32 @@ public class GetLastCommonNode {
         }
 
         return found;
+    }
+
+    // 迭代方式：
+    // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/discuss/303689/Java-beats-100
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return null;
+        }
+
+        // 终止条件
+        if (root == p || root == q) {
+            return root;
+        }
+
+        // 迭代
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        // 剪枝判断
+        if (left == null) {
+            return right;
+        }
+        if (right == null) {
+            return left;
+        }
+
+        return root;
     }
 }
