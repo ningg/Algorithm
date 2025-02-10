@@ -39,19 +39,19 @@ public class MaxWindow {
         int index = 0;
 
         for (int i = 0; i < array.length; i++) {
+            // 调整窗口内元素（坐标）：从「尾部」降序排列
             while (!qmax.isEmpty() && array[qmax.peekLast()] <= array[i]) {
                 qmax.pollLast();
             }
             qmax.add(i);
 
-            //i-w i=3 w=0;i=4 w= 1 ;i=5 w2
-            //小于三的范围就是小于窗口范围（过期）
-            if (qmax.peekFirst() == i - windowSize) {
+            //窗口越界的节点：小于三的范围就是小于窗口范围（过期）
+            if (qmax.peekFirst() + windowSize >= i) {
                 qmax.pollFirst();
             }
 
             //先调整完窗口。窗口最左边的左边就是最小值的坐标
-            if (i >= windowSize - 1) {
+            if (i - 1 >= windowSize) {
                 res[index++] = array[qmax.peekFirst()];
             }
 
