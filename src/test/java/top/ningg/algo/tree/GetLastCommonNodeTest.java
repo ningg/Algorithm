@@ -44,4 +44,28 @@ public class GetLastCommonNodeTest {
 
         return left || right;
     }
+
+
+    public static TreeNode getLowestCommonAncestor(TreeNode root, TreeNode p1, TreeNode p2) {
+        if (null == root) {
+            return null;
+        }
+        // 终止条件
+        if (root == p1 || root == p2) {
+            return root;
+        }
+
+        // 迭代
+        TreeNode left = getLowestCommonAncestor(root.left, p1, p2);
+        TreeNode right = getLowestCommonAncestor(root.right, p1, p2);
+
+        if (null == left) {
+            return right;
+        }
+        if (null == right) {
+            return left;
+        }
+
+        return root;
+    }
 }
